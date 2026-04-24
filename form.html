@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Form</title>
+</head>
+<body>
+<h2>Contact Us</h2>
+<!-- Semantic elements are those elements whose names talk about the function of the element or describes what the
+the element does e.g <form>, <table>, <img> -->
+<!-- Form Attributes 
+1. action: Is the page where the form is submitted to
+2. method: Is an http(hyper text transfer protocol) format that shows the kind of request the user is making
+3. id: Is a unique identity
+4. class: Is a used for styles that should cut accross multiple elements
+Vscode is a text editor just like notepad: It's like a book where we write our code
+		Assignment
+1. Create a form with email and password and submit button
+-->
+<form action="login.php">
+<div>
+<label for="name">Full Name:</label>
+<input type="text" id="name" placeholder="enter your full name" required>
+</div>
+<div style="margin-top:20px">
+<label for="price">Item Price:</label>
+<input type="number" id="price" placeholder="enter the number" required>
+</div>
+<div style="margin-top:20px">
+<input type="password" placeholder="enter the number" required>
+</div>
+<div style="margin-top:20px">
+<input type="radio" placeholder="enter the number" required>
+</div>
+<div style="margin-top:20px">
+<input type="checkbox" placeholder="enter the number" required>
+</div>
+<div style="margin-top:20px">
+<input type="date" placeholder="enter the number" required>
+</div>
+<div style="margin-top:20px">
+<input type="file" placeholder="enter the number" required>
+</div>
+<div style="margin-top:20px">
+<label for="email">Email Address:</label>
+<input type="email" id="email" placeholder="enter the number" required>
+</div>
+<div style="margin-top:20px">
+<select>
+<option value="Select" disabled selected>Select</option>
+<option value="toyota">Toyota</option>
+<option value="Hunda">Hunda</option>
+</select>
+</div>
+<div style="margin-top:20px">
+<input type="submit" value="Login" style="background-color:#f00;color:#fff">
+</div>
+<div style="margin-top:20px">
+<input type="reset" style="background-color:#f00;color:#fff">
+</div>
+</form>
+</body>
+</html>
