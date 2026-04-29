@@ -1,0 +1,19 @@
+#demo{
+    background-color:rgba(255,0,0,1);
+    color:rgb(255,255,255); 
+    height:300px;
+    width:300px;
+    margin-left:500px;
+    margin-top:200px
+    }
+p{
+        color:red
+    }
+.yes{
+    background-color:fuchsia;
+    color:white; 
+    height:300px;
+    width:300px;
+    margin-left:500px;
+    margin-top:200px
+}
