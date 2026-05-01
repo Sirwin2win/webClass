@@ -1,0 +1,38 @@
+#demo1{
+    background-image: url('redBag.avif');
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    color: #FFFFFF;
+    border-radius: 50%;
+}
+#demo2{
+    background-image: url('shoe2.avif');
+    background-size: cover;
+       height: 300px;
+    width: 300px;
+    color:hsl(0, 100%, 100%);
+     border-radius: 25px;
+}
+body{
+            background-image: url('redBag.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+#demo3{
+    background-color: #0f0;
+     height: 300px;
+    width: 300px;
+    border-top-style: dotted;
+    border-right-style: dashed;
+    border-bottom-style: double;
+    border-left-style: solid;
+    /* border-style: ridge; */
+    /* border-styles: double|dotted|solid|dashed|groove|inset|outset|ridge */
+    border-top-color: red;
+    border-right-color: yellow;
+    border-bottom-color: green;
+    border-left-color: navy;
+    border-width: 50px;
+     border-radius: 25px;
+}
