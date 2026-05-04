@@ -6,14 +6,19 @@
     <title>Hex | HSL</title>
     <link rel="stylesheet" href="style2.css">
     <style>
-        
+        body{
+		background-image:url('blackBag.avif');
+		
+			}
+/* This is a comment */
     </style>
 </head>
 <body>
 <!-- <body style="background-image: url('shoe.avif'); background-repeat: no-repeat; background-size: cover;"> -->
     <!-- Hex(hexadecimal, base 16) 
      0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
-     color:#00f
+     color:#00f(rgb)=> blue
+     color:#f00(rgb)=> red
      HSL(HUE, SATURATION, LIGHTNESS)
      HUE: Is a degree on the color wheel(0 to 360)
      SATURATION: Is the color intensity(0% to 100% where 0% is gray and 100% is the max color)
@@ -21,13 +26,38 @@
    
                 CSS BORDER
 Border talks about boundary
+		CSS MARGIN
+Mrgin is a space outside the boundary(border). maargins at the top, right, bottom and left
+Shorthand margin: This is used when you want to specify equal margins for top, right, bottom and left e.g margin:50px
+
+		CSS PADDING
+Padding is a space inside the border.
+		CSS TEXT
+	color;text-align;text-decoration(line,color,style,thickness); text-transform; text-shadow(text-shadow:horizontal vertical blur color)
                 ASSIGNMENT
 1. Create a file and put a background-image on the body and on an element
 2. create an element and give a height and width and a background-color and text color of blue and white respectively using hexadecimal
 3. Repeat same as 2 above using rgb
+
+		ASSIGNMENT
+1. Create 3 p tags, give them ids e.g pama1, pama2, pama3
+2. give heights and widths and background colors
+3. make them to be on the same horizontal line hint: use margin left and bottoms
      -->
      <h1 id="demo1"><a href="about.html">Header One</a></h1>
      <h1 id="demo2"><a href="about.html">Header One</a></h1>
      <h1 id="demo3">Header One</h1>
+     <p id="para1">Create a file and put a background-image 
+on the body and on an element create an element and give a 
+height and width and a background-color and text color 
+of blue and white respectively using hexadecimal
+3. Repeat same as 2 above using rgb
+		</p>
+	<input type="text" style="border-bottom-style:solid; border-radius:25px">
+<br>
+	<!-- <button style="border-radius:25px ;margin-top:50px;margin-left:50px;margin-bottom:50px ;background-color:#00f; color:#ffffff">Get Started</button> -->
+<!--<button style="border-radius:25px ;margin:50px;background-color:#00f; color:#ffffff; padding-top:10px; padding-right:10px;padding-bottom:10px;padding-left:10px">Get Started</button> -->
+
+<button style="border-radius:25px ;margin:50px;background-color:#00f; color:#ffffff; padding:10px">Get Started</button>
 </body>
 </html>

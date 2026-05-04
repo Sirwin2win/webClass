@@ -5,6 +5,9 @@
     width: 300px;
     color: #FFFFFF;
     border-radius: 50%;
+    padding-top:50px;
+    padding-left:50px;
+
 }
 #demo2{
     background-image: url('shoe2.avif');
@@ -13,6 +16,8 @@
     width: 300px;
     color:hsl(0, 100%, 100%);
      border-radius: 25px;
+ padding-top:20px;
+    padding-left:20px
 }
 body{
             background-image: url('redBag.avif');
@@ -33,6 +38,37 @@ body{
     border-right-color: yellow;
     border-bottom-color: green;
     border-left-color: navy;
-    border-width: 50px;
+    border-width: 50px; 
      border-radius: 25px;
+padding-top:20px;
+    padding-left:20px;
+    color:#f00
+}
+
+#para1{
+    background-color: #00f;
+     height: 400px;
+    width: 450px;
+    color:#fff;
+   /* overflow:auto */
+   /* overflow:hidden */
+   /* overflow:scroll */
+  /*text-align:right */
+  /* text-align:center */
+text-align:justify;
+/*text-decoration-line:underline ; */
+/*text-decoration-line:line-through;*/
+/*text-decoration-line:overline */
+/*text-decoration-style:wavy; */
+text-decoration-color:#f00;
+font-size:30px;
+text-decoration-thickness:10px;
+text-transform:capitalize;
+font-style:normal;
+text-shadow:5px 5px 3px #f00;
+box-shadow:5px 5px 10px #f00
+   
+}
+a{
+text-decoration:none
 }
