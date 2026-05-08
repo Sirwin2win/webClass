@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Position | Property</title>
+<style>
+h2{
+height:200px;
+width:200px;
+background:red;
+position:relative;
+left:50px;
+top:5px;
+padding:10px;
+}
+h3{
+height:200px;
+width:200px;
+background:blue;
+position:fixed;
+left:500px;
+top:50px;
+padding:10px;
+}
+#absDiv{
+	position: relative;
+}
+i{
+	position:absolute;
+	top: 65px;
+	left: 80px;
+}
+#h4{
+height:200px;
+width:200px;
+background:lime;
+position:sticky;
+left:200px;
+top:0px;
+padding:10px;
+}
+</style>
+</head>
+<body>
+<!-- CSS Position
+Used to determine the flow or arrangement of our elements on the page
+	Types of css positions
+1. static: This is default: Here elements are arranged the normal document way
+2. relative: Here elements are positioned relative to its normal position
+3. fixed: Element is positioned relative to its viewport
+4. absolute: Element is positioned relative to its nearest positioned ancestor
+5. sticky: Element toggles between the relative and the fixed position depending on the scroll position
+		ASIGNMENT
+1. Create a div and put an image and a text inside the div
+2. Make the text appear on the image
+-->
+<div id="absDiv">
+	<img src="shoe.avif" style="height: 200px;width: 200px;" alt="">
+	<i style="color: red;">$500</i>
+</div>
+<h4 id="h4">Header Four</h4>
+<h2>Header two</h2>
+<h2>Header two</h2>
+<h2>Header two</h2>
+<h2>Header two</h2>
+<h2>Header two</h2>
+<h2>Header two</h2>
+<h2>Header two</h2>
+<h2>Header two</h2>
+<h3>Fixed position</h3>
+
+<a href="#absDiv"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M440-727 256-544l-56-56 280-280 280 280-56 57-184-184v287h-80v-287Zm0 487v-120h80v120h-80Zm0 160v-80h80v80h-80Z"/></svg></a>
+<body>
+</html>

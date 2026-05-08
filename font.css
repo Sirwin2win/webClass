@@ -1,0 +1,28 @@
+#head1{
+	font-family:serif;
+	font-size:100px
+	}
+
+#head2{
+font-family:sans-serif
+}
+
+#head3{
+font-family:impact
+}
+
+#head4{
+font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#head5{
+font-family: 'Tangerine', serif;
+        font-size: 48px;
+}
+p{
+font-size:50px;
+font-weight:900
+}
