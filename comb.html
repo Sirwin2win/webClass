@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+        /* h1,h5,p,h6{
+            color: red;
+        } */
+        /* descendant selector */
+        div  p{
+            color: lime;
+        }
+/* Child selector */
+        div > h6{
+            color: fuchsia;
+        }
+        /* next sibling selector */
+        section + h5{
+            color: red;
+        }
+        /* subsequent sibling selector */
+        section ~ h4{
+            color: yellow;
+        }
+        /* navigation bar */
+        ul{
+            list-style-type: none;
+            background-color: blue;
+        }
+        ul > li{
+            display: inline-block;
+            padding: 10px;
+            margin-left: 50px;
+        }
+        ul > li > a{
+            text-decoration: none;
+            color: white;
+            height: 50px;
+            width: 50px;
+        }
+        a:hover{
+            background-color: black;
+            color: white;
+        }
+        #demo:hover{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!-- CSS Combinators
+     selector{property:value}
+     Four types of combinators in css
+    1. Descendant selector (space): This selects all the descendants of the specified element
+    2. Child selector (>):  This selects all elemnets that are the direct children of the specified element
+    3. Next sibling selector (+): This selects an element that is directly after a specified element
+    4. Subsequent sibling selector (~): Selects all the elements that are next sibling of the specified element 
+    Tildel
+    -->
+   <h1 id="demo">Header one</h1> 
+   <h5>Header five</h5>
+   <p>Paragraph</p>
+   <h6>Header six</h6>
+   <!-- Descendant started -->
+   <div>
+   <p>Div Para</p>
+    <p>para after footer</p>
+    <p>para after footer 2</p>
+    <footer>
+        <p>Footer Para</p>
+        <section>
+            <p>Section Para</p>
+        </section>
+    </footer>
+ 
+   </div>
+   <!-- Descendant ended -->
+    <!-- Child selector started -->
+     <div>
+       <h6>div header</h6>
+    <section>
+        <h6>Section header</h6>
+       </section>
+       <h6>Another child</h6>
+       <h1>Header One</h1>
+     </div>
+    <!-- Child selector ended -->
+     <!-- Next sibling selector started -->
+<div>   
+     <section>
+        <h5>Header five inside section</h5>
+     </section>
+     <h5>Header five 1</h5>
+     <h5>Header five 2</h5>
+     <h5>Header five 3</h5>
+</div>
+     <!-- Next sibling selector ended -->
+      <!-- Subsequent sibling selector started -->
+       <div>
+        <section>
+            <h4>Inside section</h4>
+        </section>
+        <h4>header four 1</h4>
+        <h4>header four 2</h4>
+        <h4>header four 3</h4>
+        <h4>header four 4</h4>
+        <h4>header four 5</h4>
+       </div>
+      <!-- Subsequent sibling selector ended -->
+</body>
+</html>
