@@ -1,0 +1,124 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Pseudo Clases | Elements</title>
+<style>
+       /* unvisited */
+    a:link{
+   color: blue; 
+}
+    /* visited */
+    a:visited{
+        color: orange;
+    }
+ 
+/* Hover */
+a:hover{
+    color: red;
+}
+/* active */
+a:active{
+    color: green;
+}
+
+/* focus */
+input:focus{
+    background-color: red;
+    color: #fff;
+}
+p:first-child{
+    color: lime;
+}
+p:last-child{
+    color: fuchsia;
+}
+h1:nth-child(2){
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1:nth-child(even){
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}
+h6:nth-child(3n+1){
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellow;
+}
+#h1::first-letter{
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+}
+#demo{
+    height: 500px;
+    width: 300px;
+    background-color: navy;
+    color: #fff;
+}
+#demo::first-line{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+#demo::after{
+    content: "Hello world!"
+}
+</style>
+</head>
+<body>
+<!-- 
+   Pseudo classes are used to style a specific state of an element
+   1. :link
+   2. :visited
+   3. :hover
+   4. :active
+   5. :focus
+   6 :first-child
+   7. :last-child
+   8. nth-child(n): index|number|even|odd| (an+b) where a = step size; b= starting offset and n = counter startinf from 0,1,2,3,4...
+
+    Pseudo elements are used to style a specific part of an element
+  1. ::first-letter
+  2. ::first-line
+  3. ::before
+  4. ::after
+-->
+<input type="text">
+<br>
+<a href="https://facebook.com" target="blank">visit fb</a>
+<a href="home.html" target="blank">visit home</a>
+<a href="about.html" target="blank">visit home</a>
+<div>
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+    <p>Para 4</p>
+    <p>Para 5</p>
+</div>
+<div>
+    <h1 id="h1">Header 1</h1>
+    <h1>header 2</h1>
+    <h1 id="demo">
+        Lorem ipsum dolor sit amet consectetur,
+         adipisicing elit. Pariatur repellat sit
+          tempore nostrum cupiditate, dolores error! 
+          Minus impedit asperiores fugit odio esse tempora 
+          nesciunt in adipisci eos, excepturi quia aperiam?
+    </h1>
+    <h1>header 4</h1>
+    <h1>header 5</h1>
+</div>
+
+<div>
+    <h6>Header six 1</h6>
+    <h6>Header six 2</h6>
+    <h6>Header six 3</h6>
+    <h6>Header six 4</h6>
+    <h6>Header six 6</h6>
+    <h6>Header six 7</h6>
+    <h6>Header six 8</h6>
+    <h6>Header six 9</h6>
+    <h6>Header six 10</h6>
+    <h6>Header six 11</h6>
+</div>
+
+</body>
+</html>

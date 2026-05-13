@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient</title>
+    <style>
+        /* Linear gradient */
+        #grad1{
+            height: 300px;
+            width: 300px;
+            color: #fff;
+            background-image: linear-gradient( red,blue,#0f0);
+        }
+        /* repeating linear gradient */
+        #grad2{
+            height: 300px;
+            width: 300px;
+            color: #fff;
+            background-image: repeating-linear-gradient( red,blue 5%,#0f0 10%, yellow 15%);
+        }
+        /* radial gradient */
+        #grad3{
+            height: 300px;
+            width: 300px;
+            color: #fff;
+            background-image: radial-gradient( red,blue,#0f0);
+        }
+        /* repeating radial gradient */
+        #grad4{
+            height: 300px;
+            width: 300px;
+            color: #fff;
+            background-image: repeating-radial-gradient(red, green 5%, yellow 10%);
+            border-radius: 50%;
+        }
+        /* conic gradient */
+        #grad5{
+            height: 300px;
+            width: 300px;
+            color: #fff;
+            background-image: conic-gradient( red,blue,#0f0);
+        }
+        /* repeating conic gradient */
+        #grad6{
+            height: 300px;
+            width: 300px;
+            color: #fff;
+            background-image: repeating-conic-gradient( red,blue 10%,#0f0 15%);
+            border-radius: 50%;
+        }
+        ul{
+            list-style-type: none;
+           
+        }
+        ul > li{
+            display: inline-block;
+            padding: 10px;
+        }
+        ul > li > a{
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div style=" background-color: blue; display: flex;">
+        <a href="home.html"><img src="logo2.jpg" alt="Logo" style="height: 70px; width: 70px; border-radius: 50%; margin-top: 10px; margin-left: 10px;">
+</a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="home.html">Products</a></li>
+        </ul>
+    </div>
+
+
+<div>
+
+</div>
+
+
+    <!-- 
+    CSS Gradient 
+    This is used to have a color mix as a background
+    1. linear gradient
+    2. radial gradient
+    3. conic gradient
+
+
+                ASSIGNMENT
+    1. Create a menu bar with home, about, contact and products. Hint: borrow from the one we did in the class, but try to replicate by yourself
+    2. design a contact us form in the contact page
+    -->
+    <h1 id="grad1">Header one</h1>
+    <h1 id="grad2">Header one</h1>
+    <h1 id="grad3">Header one</h1>
+    <h1 id="grad4">Header one</h1>
+    <h1 id="grad5">Header one</h1>
+    <h1 id="grad6">Header one</h1>
+</body>
+</html>
