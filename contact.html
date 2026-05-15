@@ -3,8 +3,35 @@
 <head>
 <title>Introduction to css </title>
 <link rel='stylesheet' href="style.css" >
+<style>
+         ul{
+            list-style-type: none;
+           
+        }
+        ul > li{
+            display: inline-block;
+            padding: 10px;
+        }
+        ul > li > a{
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            font-weight: 700;
+        }
+</style>
 </head>
 <body>
+        <div style=" background-color: blue; display: flex;">
+        <a href="home.html"><img src="logo2.jpg" alt="Logo" style="height: 70px; width: 70px; border-radius: 50%; margin-top: 10px; margin-left: 10px;">
+</a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="home.html">Products</a></li>
+        </ul>
+    </div>
     <h1 id='demo'>Introduction to CSS</h1>
     <h1 class='yes'>Introduction to CSS</h1>
     <h1>Introduction to CSS</h1>
