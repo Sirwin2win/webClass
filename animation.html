@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations</title>
+    <style>
+      /* Keyframes definition most basic*/
+      @keyframes demo {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: lime;
+        }
+      }
+
+      /* Second keyframes rule */
+      @keyframes arsenal {
+        0% {
+          background-color: red;
+          margin-left: 0px;
+          margin-top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          margin-left: 200px;
+          margin-top: 0px;
+        }
+        50% {
+          background-color: blue;
+          margin-left: 200px;
+          margin-top: 200px;
+        }
+        75% {
+          background-color: lime;
+          margin-left: 0px;
+          margin-top: 200px;
+        }
+        100% {
+          background-color: fuchsia;
+          margin-left: 0px;
+          margin-top: 0px;
+        }
+      }
+
+      #anim1 {
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+        color: white;
+        animation-name: demo;
+        animation-duration: 5s;
+      }
+      #anim2 {
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+        color: white;
+        animation-name: arsenal;
+        animation-duration: 5s;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS animations
+An animation lets an element gradually change from one style to another
+        CSS Animation Name & Animation Property
+    1. The animation-name property specifies the name for the animation
+    2. The animation-duration property defines how long an animation should take to complete
+        CSS @keyframes Rule
+When you specify css styles inside the @keyframes rule, the animation will gradually change from the current style to the
+    new style at different times
+-->
+    <div id="anim1">Conatiner element</div>
+    <div id="anim2">Conatiner element second</div>
+  </body>
+</html>

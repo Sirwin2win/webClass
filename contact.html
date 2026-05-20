@@ -1,44 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Introduction to css </title>
-<link rel='stylesheet' href="style.css" >
-<style>
-         ul{
-            list-style-type: none;
-           
-        }
-        ul > li{
-            display: inline-block;
-            padding: 10px;
-        }
-        ul > li > a{
-            color: #fff;
-            text-decoration: none;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 30px;
-            font-weight: 700;
-        }
-</style>
-</head>
-<body>
-        <div style=" background-color: blue; display: flex;">
-        <a href="home.html"><img src="logo2.jpg" alt="Logo" style="height: 70px; width: 70px; border-radius: 50%; margin-top: 10px; margin-left: 10px;">
-</a>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="home.html">Products</a></li>
-        </ul>
+  <head>
+    <title>Introduction to css</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      ul > li {
+        display: inline-block;
+        padding: 10px;
+      }
+      ul > li > a {
+        color: #fff;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 30px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Menu Bar Started -->
+    <div style="background-color: blue; display: flex">
+      <a href="home.html"
+        ><img
+          src="logo2.jpg"
+          alt="Logo"
+          style="
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 10px;
+          "
+        />
+      </a>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="home.html">Products</a></li>
+      </ul>
     </div>
-    <h1 id='demo'>Introduction to CSS</h1>
-    <h1 class='yes'>Introduction to CSS</h1>
+    <!-- Menu Bar Ended -->
+
+    <!-- Contact Us Form Started  -->
+    <form
+      style="
+        margin-left: 500px;
+        box-shadow: 5px 5px 5px gray;
+        background-color: white;
+        border-style: solid;
+        border-color: gray;
+        width: 305px;
+        margin-top: 20px;
+        border-radius: 15px;
+      "
+    >
+      <p style="text-align: center; color: blue">Send Us an Email</p>
+      <div>
+        <label for="name" style="display: block; margin-left: 10px; color: blue"
+          >Full Name</label
+        >
+        <input
+          type="text"
+          placeholder="John Doe"
+          style="width: 295px; height: 30px; border-radius: 50px"
+        />
+      </div>
+      <div style="margin-top: 20px">
+        <label
+          for="email"
+          style="display: block; margin-left: 10px; color: blue"
+          >Email</label
+        >
+        <input
+          type="text"
+          placeholder="email@example.com"
+          style="width: 295px; height: 30px; border-radius: 50px"
+        />
+      </div>
+      <div style="margin-top: 20px">
+        <label
+          for="subject"
+          style="display: block; margin-left: 10px; color: blue"
+          >Subject</label
+        >
+        <input
+          type="text"
+          placeholder="enter the subject"
+          style="width: 295px; height: 30px; border-radius: 50px"
+        />
+      </div>
+      <div style="margin-top: 20px">
+        <label for="name" style="display: block; margin-left: 10px; color: blue"
+          >Body</label
+        >
+        <textarea
+          name=""
+          id=""
+          style="height: 150px; width: 300px; border-radius: 15px"
+        ></textarea>
+      </div>
+      <button
+        style="
+          text-align: center;
+          width: 300px;
+          background-color: blue;
+          color: white;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          height: 35px;
+          border-radius: 50px;
+        "
+      >
+        Email Us
+      </button>
+    </form>
+    <!-- Contact Us Form Ended  -->
+
+    <h1 id="demo">Introduction to CSS</h1>
+    <h1 class="yes">Introduction to CSS</h1>
     <h1>Introduction to CSS</h1>
-    <h1 class='yes'>Introduction to CSS</h1>
-    <p class='yes'>Paragraph</p>
-    <div class='yes'>Div container</div>
-<!-- CSS  
+    <h1 class="yes">Introduction to CSS</h1>
+    <p class="yes">Paragraph</p>
+    <div class="yes">Div container</div>
+    <!-- CSS  
 CSS stands for Cascading Style Sheet
 Syntax Rule: This is the guiding rule/principle of the language
 selector{color:red;height:300px;width:300px}
@@ -58,6 +146,5 @@ selector{color:red;height:300px;width:300px}
 3. Read about SEO
 DRY: Means Don't Repeat Yourself
 -->
-</body>
-
+  </body>
 </html>

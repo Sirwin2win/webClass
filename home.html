@@ -26,9 +26,9 @@
             font-size: 30px;
             font-weight: 700;
         }
-		#landng{
+		/* #landng{
 			position: relative;
-		}
+		} */
 		#txt{
 			position:absolute;
 			color: black  important!;
@@ -37,6 +37,44 @@
 			font-size: 50px;
 			font-weight: 900;
 		}
+        /* keyframes fo the animation  */
+        @keyframes landing {
+            0%{
+                background-image: url('blackBag.avif'); background-size: 1400px 600px;;background-repeat: no-repeat;
+            }
+            20%{
+                background-image: url('laptop.avif'); background-size: 1400px 600px;;background-repeat: no-repeat;
+            }
+            40%{
+                background-image: url('laptop2.avif'); background-size: 1400px 600px;;background-repeat: no-repeat;
+            }
+            60%{
+                background-image: url('redBag.avif'); background-size: 1400px 600px;;background-repeat: no-repeat;
+            }
+            80%{
+                background-image: url('shoe.avif'); background-size: 1400px 600px;;background-repeat: no-repeat;
+            }
+            100%{
+                background-image: url('shoe2.avif'); background-size: 1400px 600px;;background-repeat: no-repeat;
+            }
+        }
+        #anim{
+            background-image: url('logo2.jpg');
+            height: 500px;
+            width: 1336px;
+            background-size: 1400px 600px;
+            animation-name: landing;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        #bol{
+            font-size: 50px;
+            font-weight: 900;
+        }
+        #lit{
+            font-size: 25px;
+            bottom:50px
+        }
 </style>
 </head>
 <body> 
@@ -50,11 +88,19 @@
             <li><a href="home.html">Products</a></li>
         </ul>
     </div>
+<div style="position:relative">
+    <div id="anim"></div>
+    <!-- <div style="position: absolute; bottom:350px;left:400px"> -->
+         <p id="bol" style="position: absolute; bottom:350px;left:400px; color: white;">Welcome to our online store.</p>
+        <p id="lit" style="position: absolute; bottom:350px;left:400px;color: white;">Where you shop with pride. And where quality is assured!</p>
+    <!-- </div> -->
 
-	<div id="landng">
+</div>
+
+	<!-- <div id="landng">
 		<img src="logo2.jpg" style="height: 500px; width: 1336px;" alt="">
 		<p id="txt" style="color: white;">Welcome to the web class landing page</p>
-	</div>
+	</div> -->
 
 <!-- CSS  
 CSS stands for Cascading Style Sheet
