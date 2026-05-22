@@ -1,0 +1,43 @@
+#parent {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  /* align-items: flex-start; */
+}
+
+p {
+  height: 100px;
+  width: 100px;
+  background-color: fuchsia;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: lime;
+  flex-wrap: wrap;
+}
+ul > li {
+  margin-left: 20px;
+  padding: 10px;
+}
+ul > li > a {
+  text-decoration: none;
+  color: #00f;
+  font-size: 30px;
+  font-weight: 900;
+}
+/* div with a class of demo */
+.demo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aboutPage {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
